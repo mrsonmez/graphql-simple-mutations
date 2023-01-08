@@ -1,4 +1,4 @@
-## Following queries are working
+## Following mutations are working
 
 ```
  mutation addUser
