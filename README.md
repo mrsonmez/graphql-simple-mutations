@@ -1,42 +1,33 @@
 ## Following queries are working
 
 ```
- query users{}
-  query user(id: 1){}
+ mutation addUser
+  mutation updateUser
+  mutation deleteUser
+  mutation deleteAllUsers
 
-  query events{}
-  query event(id: 1){}
-  query events{
-    id
-    title
-    user{
-      id
-      username
-    }
-    pariticipants{
-      id
-      username
-    }
-    location{
-      id
-      name
-    }
-  }
+  mutation addEvent
+  mutation updateEvent
+  mutation deleteEvent
+  mutation deleteAllEvents
 
-  query locations{}
-  query location(id: 1){}
+  mutation addLocation
+  mutation updateLocation
+  mutation deleteLocation
+  mutation deleteAllLocations
 
-  query participants{}
-  query participant(id: 1){}
-
+  mutation addParticipant
+  mutation updateParticipant
+  mutation deleteParticipant
+  mutation deleteAllParticipants
 
 ```
 
 ## Installation
 
 ```
-git clone https://github.com/mrsonmez/graphql-simple-queries
-cd graphql-simple-queries
+git clone https://github.com/mrsonmez/graphql-simple-mutations
+cd graphql-simple-mutations
 npm install / yarn
 npm dev/start / yarn dev/start
 ```
